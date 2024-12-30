@@ -1,0 +1,82 @@
+body {
+  font-family: Verdana;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+header {
+  display: flex; /* Flexbox aktivieren */
+  justify-content: center; /* Zentriere Inhalte horizontal */
+  background: red; /* Hintergrundfarbe */
+  color: white; /* Textfarbe */
+  padding: 1rem; /* Innenabstand */
+  width: 100%; /* Volle Breite */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex; /* Flexbox für Bild und Text */
+  align-items: center; /* Vertikale Zentrierung */
+  gap: 1rem; /* Abstand zwischen Bild und Text */
+  margin-top: 0;
+}
+
+.header-logo {
+  height: 50px; /* Bildhöhe anpassen */
+  width: auto; /* Automatische Breitenanpassung */
+}
+
+
+main {
+  background-image: url('../images/background.jpg'); /* Pfad zum Bild */
+  background-size: cover; /* Deckt die gesamte Breite und Höhe ab */
+  background-position: center; /* Zentriert das Bild */
+  width: 100%; /* Deckt die gesamte Breite des Containers ab */
+  display: flex;
+  flex-direction: column; /* Optionale Anordnung von Inhalten */
+  justify-content: center; /* Optionale vertikale Zentrierung */
+  align-items: center; /* Optionale horizontale Zentrierung */
+}
+
+section {
+  margin: 1rem 0;
+}
+
+label, input, button {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#results-container {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+div {
+  font-family: Verdana;
+  margin-top: 1rem;
+  font-size: 10pt;
+}
+
+p {
+  font-family: Verdana;
+  margin-top: 1rem;
+  font-size: 11pt;
+}
